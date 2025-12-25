@@ -1,10 +1,28 @@
 # Portfolio
 
-# PRIME: code, prime
+## Eric Broyles
+- graduation
+- resume link to pdf
+- linked in
+- email
 
 
-# who am I, graduation, quick info
-# layout of projects... each project has a Prime.pdf Preview.pdf for more inofmration
-# add links to game projects and coming soon to link to itch.io link
-# add resume
-# links 
+## PRIME
+- Role: Undergraduate Engineering Researcher
+- Duration
+- Project Overview: (mission, pcitires, ...)
+- My Role
+- Results
+
+## Radio Frequency Classification Project
+
+## PREVIEW
+
+## Aerospace Senior Design Team Project
+
+## The City Planner's Duel Video Game
+
+## MAZE ROBOT
+
+
+
