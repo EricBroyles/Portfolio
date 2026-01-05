@@ -1,10 +1,7 @@
 # Portfolio
 
 ## Eric Broyles
-- graduation
-- resume link to pdf
-- linked in
-- email
+
 
 
 ## PRIME

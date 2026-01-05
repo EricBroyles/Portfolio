@@ -41,7 +41,7 @@ Use this as the working launch code for next semester.
 
 ## Troubleshooting
 
-- If the temperature sensors read garbage values (e.g., `-242` or `242`):
+If the temperature sensors read garbage values (e.g., `-242` or `242`):
 - Check the wiring and ensure all connections are secure.
 - If the issue persists:
  - Verify the wire order.
@@ -64,7 +64,7 @@ Move this entire folder into your Arduino `libraries` directory.
 - Attempted Fix: split `readRTD` into 3 parts. Only use one 10 ms delay and 65 ms delay for each temperature sensor.
 - Unresolved: Program halts and waits with no error after calling any `readRTD` parts.
 - Problem likely from my library code trying to look for a sensor with invalid information. Add new serial.print() to isolate issue. 
-- Or: add async step functions into Adafruit_MAX31865_library and test this.
+- Or add async step functions into Adafruit_MAX31865_library and test this.
 
 
 
