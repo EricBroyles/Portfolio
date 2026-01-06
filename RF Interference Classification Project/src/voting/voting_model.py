@@ -335,7 +335,8 @@ class MyNN(pl.LightningModule):
         cm = confusion_matrix(y_true, y_pred)
         cmd = ConfusionMatrixDisplay(cm, display_labels=range(num_classes))
         plt.figure(figsize=(16,16))
-        cmd.plot(cmap=plt.cm.Blues)
+        # cmd.plot(cmap=plt.cm.Blues)
+        cmd.plot()
         plt.title("Confusion Matrix")
         plt.show()
 
