@@ -411,9 +411,6 @@ class MyLinear:
     
     def evaluate_sample(self, features):
         """"
-        @brief
-        to compute the 
-
         @params
         features: np.array() (num_features,)
 
@@ -447,7 +444,6 @@ class MyLinear:
     @staticmethod
     def get_proportional_probs(scores):
         """
-
         @params
         scores: np.array (num_classes,) "0->inf"
 
