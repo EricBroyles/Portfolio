@@ -5,21 +5,22 @@
 
 
 ## PRIME
-- Role: Undergraduate Engineering Researcher
+<!-- - Role: Undergraduate Engineering Researcher
 - Duration
 - Project Overview: (mission, pcitires, ...)
 - My Role
-- Results
+- Results -->
 
 ## Radio Frequency Classification Project
 
 ## PREVIEW
+<!-- - code, CAD -->
 
 ## Aerospace Senior Design Team Project
 
 ## The City Planner's Duel Video Game
 
-## MAZE ROBOT
+## Maze Robot
 
 
 
