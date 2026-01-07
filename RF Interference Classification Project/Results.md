@@ -17,18 +17,18 @@ https://gitlab.cc-asp.fraunhofer.de/darcy_gnss/fiot_highway2
 
 
 ## CNN
-CNN0to8 (with and without extra data, various depths, resized, and not resized)
+<!-- CNN0to8 (with and without extra data, various depths, resized, and not resized)
 
 Neural network models produce results very similar to the CNN models shown above. They struggle with class 1,3,8 due to these classes having fewer samples and being very similar to class 0 or 2. They are however consistent with class 0,1,4,5,6,7. The idea behind the voting model is to pair several NN models with several of another 
 
 dropuout (time/freq bins) rectange, shallow vs deep, resize
 table
 
-Use normed spectogram data
+Use normed spectogram data -->
 
 ## Decision Tree CNN
 
-boosted 
+<!-- boosted  -->
 
 ## NN 
 The samples in highway dataset are mainly variations of noise with some noticable signal patterns mixed in. The location of the signal in the spectogram does not seem to be the driving decision maker. Consequently, it is hypothezied that each spectogram can be described as a set of "superfeatures" that encode a statistical parameter (mean, median, std, ...). This will reduce the size of the dataset and could help the models focus on the most descriptive data. These superfeatures will be used to train a neural network model.
