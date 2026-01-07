@@ -5,10 +5,14 @@ Develop models to classify 9 types of RF interference that occurred along a sect
 ## Dataset
 
 ### Example Samples
-![Example RF interference samples](assets/classes_2sets.png)
+<p align="center">
+  <img src="assets/classes_2sets.png" alt="Example RF interference samples">
+</p>
 
 ### Samples Distribution
-![Train/test distribution](assets/highway_ds_train_test.png)
+<p align="center">
+  <img src="assets/highway_ds_train_test.png" alt="Train/test distribution">
+</p>
 
 ### Source
 https://gitlab.cc-asp.fraunhofer.de/darcy_gnss/fiot_highway2
@@ -47,8 +51,9 @@ Each sample in the highway dataset is trainsformed into 1344 features.
   - norm0to1: scale onto **[0, 1]**
   - normz: scale using **z-score**
 
-![t-SNE of superfeatures](assets/train_nn_superfeatures_tSNE.png)
-
+<p align="center">
+  <img src="assets/train_nn_superfeatures_tSNE.png" alt="t-SNE of superfeatures">
+</p>
 ### Tested Models
 <table align="center" style="border-collapse: collapse; width: 100%; max-width: 100%;">
   <thead>
@@ -188,7 +193,9 @@ Each sample in the highway dataset is trainsformed into 2112 features.
   - 90th and 10th percentiles
 - Normalize all features to the range **[0, 1]**
 
-![t-SNE of train superfeatures](assets/train_superfeatures_tSNE.png)
+<p align="center">
+  <img src="assets/train_superfeatures_tSNE.png" alt="t-SNE of train superfeatures">
+</p>
 
 ### Example NN Model
 This represents the typical results when evaluating neural network models. This has an accuracy of **77.1%** after one guess and **94.9%** after two guesses. 
