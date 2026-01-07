@@ -47,6 +47,8 @@ Each sample in the highway dataset is trainsformed into 1344 features.
   - norm0to1: scale onto **[0, 1]**
   - normz: scale using **z-score**
 
+![t-SNE of superfeatures](assets/train_nn_superfeatures_tSNE.png)
+
 ### Tested Models
 <table align="center" style="border-collapse: collapse; width: 100%; max-width: 100%;">
   <thead>
@@ -185,6 +187,8 @@ Each sample in the highway dataset is trainsformed into 2112 features.
   - 75th and 25th percentiles
   - 90th and 10th percentiles
 - Normalize all features to the range **[0, 1]**
+
+![t-SNE of train superfeatures](assets/train_superfeatures_tSNE.png)
 
 ### Example NN Model
 This represents the typical results when evaluating neural network models. This has an accuracy of **77.1%** after one guess and **94.9%** after two guesses. 
@@ -333,6 +337,7 @@ This model has a higher success rate with classifiying minority classes 3,4,5,6,
 * Use more instances of classes 1,3,8 that exist in highway dataset 1.
 * Use better ways of creating artificial 1,3,8 samples.
 * Further explore nn with different augmentations.
+* Use existing image classification models.
 
 
 
