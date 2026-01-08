@@ -1,25 +1,22 @@
 # PREVIEW  
 *Purdue Rocket Experimental Video in Educational Work*
 
-
-
 ## Project Overview
 
-**PREVIEW** is a student-led aerospace project focused on developing a self-contained payload capable of collecting sensor data and capturing video footage of a rocket’s exterior during hypersonic flight. The launch provider for this mission is **PLUTO Aerospace**. During flight, the payload is designed to withstand impulse accelerations of up to **150 g**.
+PREVIEW is a student-led aerospace project developing a self-contained payload capable of collecting sensor data and capturing video footage of a rocket’s exterior during hypersonic flight. The launch provider for this mission is PLUTO Aerospace. During flight, the payload is designed to withstand impulse accelerations of up to 150 g.
 
-During fall 2025, our team manufactured the aluminum wedge structures, finalized, fabricated, and assembled the printed circuit board (PCB) through **OSH Park**, and developed the launch and data acquisition software.
+During fall 2025, our team manufactured the aluminum wedge structures, fabricated, and assembled the printed circuit board (PCB) through OSH Park, and developed the launch and data acquisition software. A temporary 3D printed version of the rocket body is used to verify the system can be assembled. 
 
 ## Technical Description
+The payload is built around a Raspberry Pi Zero microcontroller paired with a Pi Camera, enabling video capture of the rocket’s exterior surface. The sensor suite includes:
 
-The payload is built around a **Raspberry Pi Zero** microcontroller paired with a **Pi Camera**, enabling video capture of the rocket’s exterior surface. The sensor suite includes:
-
-- **Two pressure transducers** to measure at the body and wedge, enabling Mach number estimation  
-- An **ADXL375 accelerometer** for high-G acceleration measurements  
-- A **K-type thermocouple** with a **MAX31855** breakout board for internal temperature monitoring  
+- Two pressure transducers to measure at the body and wedge, enabling Mach number estimation  
+- An ADXL375 accelerometer for high-G acceleration measurements  
+- A K-type thermocouple with a MAX31855 breakout board for internal temperature monitoring  
 
 Synchronized sensor data and video footage are used to evaluate the performance of a material applied to the rocket’s exterior under hypersonic conditions.
 
-All electronic components are housed within a custom circular structural frame designed in CAD. The system stacks batteries, the microcontroller, and sensors across multiple disks separated by spacers, reducing mechanical stress during high-G launch events. Power is supplied by two **9V NiMH batteries**, regulated down to **5V** for onboard electronics.
+All electronic components are housed within a circular structural frame. The system stacks batteries, the microcontroller, and sensors across multiple disks separated by spacers, reducing mechanical stress during high-G launch events. Power is supplied by two 9V NiMH batteries, regulated down to 5V for onboard electronics.
 
 
 ## My Role  
@@ -31,58 +28,13 @@ All electronic components are housed within a custom circular structural frame d
 - Configured Raspberry Pi to enable WiFi power management and auto-run launch software on power-up using systemd service files.
 
 
-## Design Overview
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px; max-width: 1200px; margin: auto;">
-  <figure style="flex: 1 1 300px; max-width: 400px;">
-    <img src="assets/camera_wedge_front.png" alt="Camera Front Wedge" style="width: 100%; height: auto;">
-    <figcaption style="text-align: center;">Camera Front Wedge</figcaption>
-  </figure>
-  <figure style="flex: 1 1 300px; max-width: 400px;">
-    <img src="assets/camera_wedge_bottom.png" alt="Camera Bottom Wedge" style="width: 100%; height: auto;">
-    <figcaption style="text-align: center;">Camera Bottom Wedge</figcaption>
-  </figure>
-  <figure style="flex: 1 1 300px; max-width: 400px;">
-    <img src="assets/CAD_camera_wedge_front.png" alt="CAD Camera Front Wedge" style="width: 100%; height: auto;">
-    <figcaption style="text-align: center;">CAD Camera Front Wedge</figcaption>
-  </figure>
-  
-  <figure style="flex: 1 1 300px; max-width: 400px;">
-    <img src="assets/toggle_wedge_front.png" alt="Toggle Front Wedge" style="width: 100%; height: auto;">
-    <figcaption style="text-align: center;">Toggle Front Wedge</figcaption>
-  </figure>
-  <figure style="flex: 1 1 300px; max-width: 400px;">
-    <img src="assets/toggle_wedge_bottom.png" alt="Toggle Bottom Wedge" style="width: 100%; height: auto;">
-    <figcaption style="text-align: center;">Toggle Bottom Wedge</figcaption>
-  </figure>
-  <figure style="flex: 1 1 300px; max-width: 400px;">
-    <img src="assets/CAD_toggle_wedge_front.png" alt="CAD Toggle Front Wedge" style="width: 100%; height: auto;">
-    <figcaption style="text-align: center;">CAD Toggle Front Wedge</figcaption>
-  </figure>
-  
-  <figure style="flex: 1 1 300px; max-width: 400px;">
-    <img src="assets/pt_frame_inside.png" alt="Payload Frame Inside" style="width: 100%; height: auto;">
-    <figcaption style="text-align: center;">Payload Frame Inside</figcaption>
-  </figure>
-  <figure style="flex: 1 1 300px; max-width: 400px;">
-    <img src="assets/CAD_pt_frame_outside.png" alt="CAD Payload Frame Outside" style="width: 100%; height: auto;">
-    <figcaption style="text-align: center;">CAD Payload Frame Outside</figcaption>
-  </figure>
-  <figure style="flex: 1 1 300px; max-width: 400px;">
-    <img src="assets/CAD_battery_layout.png" alt="CAD Battery Layout" style="width: 100%; height: auto;">
-    <figcaption style="text-align: center;">CAD Battery Layout</figcaption>
-  </figure>
-  
-  <figure style="flex: 1 1 300px; max-width: 400px;">
-    <img src="assets/breadboard_early_prototype_temp_accel.jpg" alt="Breadboard Early Prototype Temp & Accel" style="width: 100%; height: auto;">
-    <figcaption style="text-align: center;">Breadboard Early Prototype (Temp & Accel)</figcaption>
-  </figure>
-  <figure style="flex: 1 1 300px; max-width: 400px;">
-    <img src="assets/breadboard_final_protoype_temp_accel_pressure_batteries.jpg" alt="Breadboard Final Prototype Temp, Accel, Pressure, Batteries" style="width: 100%; height: auto;">
-    <figcaption style="text-align: center;">Breadboard Final Prototype (Temp, Accel, Pressure, Batteries)</figcaption>
-  </figure>
-  <figure style="flex: 1 1 300px; max-width: 400px;">
-    <img src="assets/PCB_design.png" alt="PCB Design" style="width: 100%; height: auto;">
-    <figcaption style="text-align: center;">PCB Design</figcaption>
-  </figure>
-</div>
+
+
+
+| | | |
+|---|---|---|
+| ![Camera Front Wedge](assets/camera_wedge_front.png)<br>Camera Front Wedge | ![Camera Bottom Wedge](assets/camera_wedge_bottom.png)<br>Camera Bottom Wedge | ![CAD Camera Front Wedge](assets/CAD_camera_wedge_front.png)<br>CAD Camera Front Wedge |
+| ![Toggle Front Wedge](assets/toggle_wedge_front.png)<br>Toggle Front Wedge | ![Toggle Bottom Wedge](assets/toggle_wedge_bottom.png)<br>Toggle Bottom Wedge | ![CAD Toggle Front Wedge](assets/CAD_toggle_wedge_front.png)<br>CAD Toggle Front Wedge |
+| ![Payload Frame Inside](assets/pt_frame_inside.png)<br>Payload Frame Inside | ![CAD Payload Frame Outside](assets/CAD_pt_frame_outside.png)<br>CAD Payload Frame Outside | ![CAD Battery Layout](assets/CAD_battery_layout.png)<br>CAD Battery Layout |
+| ![Early Prototype](assets/breadboard_early_prototype_temp_accel.jpg)<br>Early Breadboard Prototype | ![Final Prototype](assets/breadboard_final_protoype_temp_accel_pressure_batteries.jpg)<br>Final Breadboard Prototype | ![PCB Design](assets/PCB_design.png)<br>PCB Design |
