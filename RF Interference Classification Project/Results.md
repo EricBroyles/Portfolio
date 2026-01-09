@@ -572,7 +572,7 @@ This model has a higher success rate with classifiying minority classes 3,4,5,6,
 * Use more instances of classes 1,3,8 that exist in highway dataset 1.
 * Use better ways of creating artificial 1,3,8 samples.
 * Further explore nn with different augmentations.
-* Use existing image classification models.
+* Use existing image classification models to improve CNN.
 
 
 

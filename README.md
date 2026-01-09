@@ -55,7 +55,7 @@ Designed and manufactured a 3.4 kg fixed-wing RC aircraft using Fusion 360, a Pi
 **[View Project →](Aerospace%20Senior%20Design/Poster.pdf)**
 
 
-## The City Planner’s Duel — Simulation & Game Engine
+## The City Planner’s Duel — Transporation Simulation Game
 **Description:**  
 Developing an agent-based city transportation simulation engine in Godot with C++, featuring A* pathfinding for vehicles and pedestrians, interactive UI tools, and an early prototype planned for release on itch.io.
 
