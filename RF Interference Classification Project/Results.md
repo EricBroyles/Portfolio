@@ -5,11 +5,13 @@ Develop models to classify 9 types of RF interference that occurred along a sect
 ## Dataset
 
 ### Example Samples
+
 <p align="center">
   <img src="assets/classes_2sets.png" alt="Example RF interference samples">
 </p>
 
 ### Samples Distribution
+
 <p align="center">
   <img src="assets/highway_ds_train_test.png" alt="Train/test distribution">
 </p>
