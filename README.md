@@ -13,7 +13,7 @@ Below is a collection of my engineering, research, and software projects.
 
 <!-- Each project includes a brief description, representative visuals, and a link to detailed documentation. -->
 
-## PRIME
+## PRIME - Zero Gravity Flight Experiment
 **Description:**  
 PRIME is a microgravity fluid-dynamics payload for a LEAP rocket that studies liquid transfer between coupled tanks in zero gravity with C++ controlled flight sequencing.
 
