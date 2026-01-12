@@ -22,7 +22,7 @@ All electronic components are housed within a circular structural frame. The sys
 ## My Role  
 *January 2025 – October 2025*
 - System design considerations for electronics.
-- Improved Solidworks CAD protoypes.
+- Improved SolidWorks CAD protoypes.
 - PCB protoyping with breadboard and aided with Fusion 360 PCB layouts.
 - Improved Python scripts for launch sequence control and sensor data acquisition.
 - Configured Raspberry Pi to enable WiFi power management and auto-run launch software on power-up using systemd service files.

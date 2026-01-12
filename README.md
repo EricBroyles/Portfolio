@@ -39,7 +39,7 @@ Developed machine learning models to classify radio-frequency interference types
 **Description:**  
 Designed and built a self-contained payload to capture sensor data and exterior video during hypersonic rocket flight.
 
-`Embedded Systems` · `PCB Design` · `SolidWorks CAD` · `Python` · `Raspberry Pi`
+`Python` · `Raspberry Pi` · `Embedded Systems` · `PCB Design` · `Fusion 360` · `SolidWorks CAD`
 <!-- **Preview:**  
 ![PREVIEW Payload](PREVIEW/assets/preview.png) -->
 
