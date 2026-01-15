@@ -1,0 +1,472 @@
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{array}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{pdfpages}
+
+% Styling
+\definecolor{accent}{RGB}{0, 51, 102}
+
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}
+  {0em}
+  {}[\titlerule]
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=accent,
+  urlcolor=accent
+}
+
+% Document
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE \textbf{Engineering Portfolio}} \\[4pt]
+    {\Large Eric Broyles} \\[8pt]
+
+    Aerospace Engineering, B.S. — Purdue University \\[6pt]
+
+    \href{https://github.com/EricBroyles}{github.com/EricBroyles} \\
+    \href{https://linkedin.com/in/eric-broyles}{linkedin.com/in/eric-broyles} \\
+    \href{mailto: eric.c.broyles@outlook.com}{eric.c.broyles@outlook.com}
+\end{center}
+
+
+% Professional Summary
+\section*{Professional Summary}
+I am a recent Aerospace Engineering graduate actively seeking 
+challenging roles in unmanned systems, hypersonics, testing and 
+validation, modeling and simulation, or systems engineering and design. 
+I bring a strong foundation in aerospace fundamentals, programming 
+experience in Python and MATLAB, growing proficiency in C++, and 
+hands-on experience with CAD, CFD, technical writing, and technical 
+presentations. I am highly motivated by complex problems and continuous 
+learning. The best way to reach me is via email.
+
+% Portfolio Overview
+\section*{Portfolio Overview}
+Below is a collection of projects completed during my undergraduate 
+studies. Many of these projects include codebases and additional 
+results that can be found in more detail at:
+\begin{center}
+\href{https://github.com/EricBroyles/Portfolio}{github.com/EricBroyles/Portfolio}
+\end{center}
+
+
+% Project Section
+\section*{Selected Projects}
+
+\begin{itemize}[leftmargin=*, label={}]
+    \item \hyperref[sec:prime]{\textbf{PRIME Research Project}} \dotfill\pageref{sec:prime}
+    \item \hyperref[sec:rf]{\textbf{RF Interference Classification Research Project}} \dotfill\pageref{sec:rf}
+    \item \hyperref[sec:preview]{\textbf{PREVIEW Research Project}} \dotfill\pageref{sec:preview}
+    \item \hyperref[sec:senior]{\textbf{Aerospace Senior Design Project}} \dotfill\pageref{sec:senior}
+    \item \hyperref[sec:transport]{\textbf{Transportation Simulation Game}} \dotfill\pageref{sec:transport}
+    \item \hyperref[sec:maze]{\textbf{Autonomous Maze Navigation Robot}} \dotfill\pageref{sec:maze}
+\end{itemize}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% PRIME
+\phantomsection\section*{PRIME Research Project}\label{sec:prime}
+\textit{Purdue Rocket Instrumentation and Measurement Experiment}
+
+\vspace{6pt}
+
+\textbf{Project Overview} \\
+PRIME is a microgravity fluid-dynamics payload to be launched on a LEAP rocket. 
+The project's goal is to study liquid transfer behavior between coupled tanks 
+in zero gravity. Recent efforts focused on manufacturing key structural components, 
+refining tank geometry, and enhancing electronics and imaging systems.
+
+\vspace{6pt}
+
+\textbf{Technical Description} \\
+The PRIME payload consists of two transparent acrylic 
+tanks connected through a sealed plumbing system with pumps that transfer fluid under
+ microgravity conditions. Structurally, the payload employs 6061-T6 aluminum components
+  to withstand launch loads and a mounting system for the GoPro Hero 8 camera. 
+  The payload integrates four LEDs for uniform lighting in the unlit rocket bay. 
+  Software control sequences are managed by C++ code that triggers sensor activation, 
+  lighting, camera recording, and pump operation in timed stages during flight.
+
+\vspace{6pt}
+
+\textbf{My Role \& Accomplishments} \\
+\textit{October 2025 --- December 2025}
+\vspace{-6pt}
+
+\begin{itemize}[leftmargin=*]
+    \item Wrote the C++ code to manage the launch sequence, automate sensor and camera activation, and control fluid transfer operations.
+    \item Resolved hardware-software integration issues to ensure reliable data collection and payload performance.
+    \item Authored launch documentation to support ongoing development and future team efforts.
+\end{itemize}
+\vspace{6pt}
+
+\vspace{10pt}
+\begin{center}
+\begin{minipage}{0.3\textwidth}
+    \centering
+    \includegraphics[height=5cm,keepaspectratio]{PRIME/assets/CAD_assembly.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+    \centering
+    \includegraphics[height=5cm,keepaspectratio]{PRIME/assets/vane_in_tank.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+    \centering
+    \includegraphics[height=5cm,keepaspectratio]{PRIME/assets/structural_plumbing_electronic_assembly_view2.jpg}
+\end{minipage}
+\vspace{6pt}
+\begin{minipage}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=3.5cm,keepaspectratio]{PRIME/assets/structural_plumbing_electronic_assembly_view1.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=3.5cm,keepaspectratio]{PRIME/assets/circuit_layout.png}
+\end{minipage}
+\end{center}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% RADIO FREQUENCY INTERFERENCE CLASSIFICATION
+\phantomsection\section*{RF Interference Classification Research Project}\label{sec:rf}
+\textit{Purdue Data Mine}
+
+\vspace{6pt}
+
+\textbf{Project Overview \& My Role} \\
+\textit{August 2025 --- December 2025}
+
+I worked to develop machine learning models to classify nine types of radio-frequency interference observed along a German highway.
+The primary challenges were severe class imbalance and the similarities across the spectrogram data.
+
+Model development was performed with Python and PyTorch using Purdue's Anvil supercomputer.
+I trained and evaluated multiple model architectures while experimenting with data normalization and augmentation techniques, including noise, dropout, and mix-up, to improve robustness and minority-class performance.
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.45\textwidth]{RF Interference Classification Project/assets/classes_2sets.png}
+  \hfill
+  \includegraphics[width=0.45\textwidth]{RF Interference Classification Project/assets/highway_ds_train_test.png}
+\end{figure}
+
+\subsection*{Best CNN (Baseline Model)}
+A convolutional neural network trained on normalized spectrogram data with targeted noise augmentation.
+This model serves as the baseline against which all subsequent approaches were evaluated.
+While achieving strong overall accuracy, it struggles with minority classes, particularly classes 3 and 8.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{m{0.35\textwidth}m{0.45\textwidth}}
+\begin{tabular}{ll}
+\textbf{Accuracy:} & 79.4\% \\
+\textbf{Loss:} & 0.5343 \\
+\textbf{Parameters:} & 4.3M \\
+\textbf{Noise:} & Classes 1, 3 \\
+\end{tabular}
+&
+\includegraphics[width=\linewidth]{RF Interference Classification Project/assets/cnn_conf_matrix.png}
+\end{tabular}
+\end{table}
+
+\newpage
+
+
+\subsection*{Best Hierarchical CNN}
+A hierarchical CNN architecture was developed using a binary classifier followed by sub-classifiers (0--3 and 3--8). While the 3--8 classifier performed well in isolation, the binary classifier's poor detection of classes 3 and 8 limited overall effectiveness. This method did not improve upon the standard CNN \@.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{llccl}
+\toprule
+\textbf{Model} & \textbf{Description} & \textbf{Acc} & \textbf{Loss} & \textbf{Notes} \\
+\midrule
+CNN Binary & no aug, 8 epochs, 4.3M params & 97.5\% & 0.0879 & 0\% class 3, 6\% class 8 \\
+CNN 0to3 & time \& freq dropout, 8 epochs, 4.3M & 79.3\% & 0.5242 & 0\% class 3 \\
+CNN 3to8 & time \& freq dropout, 12 epochs, 4.3M & 95.9\% & 0.1289 & 83\% c3, 100\% c8 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\vspace{-1em}
+\includegraphics[width=0.3\textwidth]{RF Interference Classification Project/assets/cnn_binary_conf_matrix.png}
+\hfill
+\includegraphics[width=0.3\textwidth]{RF Interference Classification Project/assets/cnn_0to3_conf_matrix.png}
+\hfill
+\includegraphics[width=0.3\textwidth]{RF Interference Classification Project/assets/cnn_3to8_conf_matrix.png}
+\vspace{-1em}
+\end{figure}
+
+\subsection*{Best Neural Network}
+Spectrograms in the highway dataset are mainly noise variations with some signal patterns. Each spectrogram was described using ``superfeatures'' encoding statistical parameters (mean, median, standard deviation, etc.), reducing dataset size and helping models focus on descriptive data. This approach proved slightly more accurate than CNNs and trained 10x faster.
+
+\textbf{Superfeatures:} Each sample is transformed into 1,344 features by resizing spectrograms from 512×243 to 128×64, then extracting statistical features (mean, std, median, min/max and their locations) across rows and columns, normalized using 0-to-1 scaling or z-score.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{llccl}
+\toprule
+\textbf{Model} & \textbf{Description} & \textbf{Acc} & \textbf{Loss} \\
+\midrule
+run2 cell1 & superfeatures, 25 epochs, 822K params & 79.6\% & 0.5428 & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{m{0.38\textwidth}m{0.38\textwidth}}
+\includegraphics[width=\linewidth]{RF Interference Classification Project/assets/train_nn_superfeatures_tSNE.png}
+&
+\includegraphics[width=\linewidth]{RF Interference Classification Project/assets/nn_model1_conf_matrix.png}
+\end{tabular}
+\end{table}
+
+\newpage
+
+\subsection*{Best Voting Models}
+Voting models combine neural networks (which struggle with classes 1, 3, 8) with linear models (better at 1, 3, 8 but weaker on 0, 2). \textbf{Unfitted voting} sums probabilities across models. \textbf{Fitted voting} uses probabilities as features for a neural network. Neither approach improved over the standard NN.
+
+\textbf{Superfeatures:} Each sample is transformed into 2,112 features using extended statistical measures including percentiles (75th, 25th, 90th, 10th) in addition to the previous features.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{Model} & \textbf{Description} & \textbf{Accuracy G1} & \textbf{Accuracy G2} \\
+\midrule
+NN1 & 8 epochs, 1.2M params & 78.2\% & 95.4\% \\
+NN2 & 8 epochs, 2.0M params & 78.8\% & 95.7\% \\
+NN3 & 6 epochs, 5.5M params & 78.0\% & 95.8\% \\
+Linear1 & Superfeatures & 63.6\% & 80.3\% \\
+Linear2 & No mean, std & 63.7\% & 79.8\% \\
+Linear3 & No mean, std, percentiles & 63.6\% & 80.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{cc}
+\textbf{Unfitted Voter} & \textbf{Fitted Voter} \\[0.5em]
+
+\begin{tabular}{lc}
+Accuracy & 77.7\%
+\end{tabular}
+&
+\begin{tabular}{lc}
+Accuracy & 78.2\%
+\end{tabular}
+\\[1em]
+
+\includegraphics[width=0.4\textwidth]{RF Interference Classification Project/assets/unfited_voter_conf_matrix_p1.png}
+&
+\includegraphics[width=0.4\textwidth]{RF Interference Classification Project/assets/fited_voter_conf_matrix.png}
+
+\end{tabular}
+\end{table}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% PREVIEW
+\phantomsection\section*{PREVIEW Research Project}\label{sec:preview}
+
+\textit{Purdue Rocket Experimental Video in Educational Work}
+
+\vspace{6pt}
+
+\textbf{Project Overview} \\
+PREVIEW is a student-led project developing a payload to collect sensor data and video footage of a rocket's exterior during hypersonic flight with PLUTO Aerospace. The payload withstands accelerations up to 150 g. During fall 2025, the team manufactured aluminum wedge structures, assembled the PCB through OSH Park, and developed launch and data acquisition software.
+
+\vspace{6pt}
+
+\textbf{Technical Description} \\
+The payload uses a Raspberry Pi Zero with Pi Camera for video capture. Sensors include two pressure transducers (for Mach number estimation), an ADXL375 accelerometer (high-G measurements), and a K-type thermocouple (internal temperature monitoring). Components are housed in a circular frame with stacked disks separated by spacers to reduce mechanical stress. Two 9V NiMH batteries provide power, regulated to 5V for electronics.
+
+\vspace{6pt}
+
+\textbf{My Role \& Accomplishments} \\
+\textit{January 2025 --- October 2025}
+\vspace{-10pt}
+
+\begin{itemize}[leftmargin=*]
+    \item Contributed to system design considerations for electronics integration.
+    \item Improved SolidWorks CAD prototypes for structural and electronic components.
+    \item Prototyped PCB designs using breadboards and aided layout development with Fusion 360.
+    \item Improved Python scripts for launch sequence control and sensor data acquisition.
+    \item Configured Raspberry Pi for WiFi power management and auto-run launch software on power-up using systemd service files.
+\end{itemize}
+\vspace{6pt}
+\begin{center}
+\begin{minipage}{0.3\textwidth}
+    \centering
+    \includegraphics[height=4cm,keepaspectratio]{Preview/assets/camera_wedge_front.png}
+    
+    \small Camera Front Wedge
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+    \centering
+    \includegraphics[height=4cm,keepaspectratio]{Preview/assets/camera_wedge_bottom.png}
+    
+    \small Camera Bottom Wedge
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+    \centering
+    \includegraphics[height=4cm,keepaspectratio]{Preview/assets/CAD_camera_wedge_front.png}
+    
+    \small CAD Camera Front Wedge
+\end{minipage}
+
+\begin{minipage}{0.3\textwidth}
+    \centering
+    \includegraphics[height=4cm,keepaspectratio]{Preview/assets/breadboard_early_prototype_temp_accel.jpg}
+    
+    \small Early Breadboard Prototype
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+    \centering
+    \includegraphics[height=4cm,keepaspectratio]{Preview/assets/breadboard_final_protoype_temp_accel_pressure_batteries.jpg}
+    
+    \small Final Breadboard Prototype
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+    \centering
+    \includegraphics[height=4cm,keepaspectratio]{Preview/assets/PCB_design.png}
+    
+    \small PCB Design
+\end{minipage}
+\end{center}
+
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Senior Design
+\phantomsection\includepdf[pages=-]{Aerospace Senior Design/Poster.pdf}\label{sec:senior}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Transportation Simulation
+\phantomsection\section*{Transportation Simulation Game}\label{sec:transport}
+
+\textit{Personal Project}
+
+\vspace{6pt}
+
+\textbf{Project Overview \& My Role} \\
+\textit{January 2025 --- Ongoing}
+
+Development of a large-scale urban transportation simulation capable of modeling a 4096×4096 cell city (each cell representing 10 ft) with up to 65,536 autonomous agents navigating using A* pathfinding algorithms. The project aims to simulate realistic traffic patterns and pedestrian behavior across an urban environment.
+
+\vspace{6pt}
+
+\textbf{Technical Description} \\
+Early prototypes focused on learning the Godot Engine, UI development, and GDScript (a Python-like language). However, performance bottlenecks emerged when scaling to the target number of agents and city size. Recent development shifted to GPU-accelerated rendering using custom shaders for the cityscape visualization and C++ for high-performance agent simulation. The current implementation features a shader-based rendering system and a command-based interface for generating city layouts.
+
+\vspace{6pt}
+
+
+\vspace{10pt}
+\begin{center}
+\begin{minipage}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=5cm,keepaspectratio]{Transportation Game-Simulation/assets/game_build.png}
+    \small Early prototype: example city
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=5cm,keepaspectratio]{Transportation Game-Simulation/assets/game_more_ui.png}
+    \small Early prototype: some additional UI
+\end{minipage}
+\vspace{6pt}
+
+\begin{minipage}{\textwidth}
+    \centering
+    \includegraphics[height=5cm,keepaspectratio]{Transportation Game-Simulation/assets/sim_ex_city.png}
+    
+    \small Current prototype: shader-based rendering with command tool (bottom)
+\end{minipage}
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Maze Robot
+\phantomsection\section*{Autonomous Maze Navigation Robot}\label{sec:maze}
+
+\textit{Course Project}
+
+\vspace{6pt}
+
+\textbf{Project Overview} \\
+Design and build an autonomous robot to navigate a 12 ft by 12 ft maze containing obstacles with IR signatures and magnetic signatures detectable via hall sensors. The robot must track its position and generate a visual representation of the completed maze.
+
+\vspace{6pt}
+
+\textbf{Technical Description} \\
+The robot platform utilized a Raspberry Pi as the main controller, IR detectors, hall sensors, gyroscope, and ultrasonic sensors. Ultrasonic sensors detected maze walls for navigation, while IR detectors and hall sensors identified and classified different obstacle types. Position tracking was achieved through odometry and motor sensor feedback, with real-time mapping algorithms generating a representation of the maze layout as the robot progressed through the course.
+
+\vspace{6pt}
+
+\textbf{My Role \& Accomplishments} \\
+\textit{February 2022 --- April 2022}
+\vspace{-6pt}
+
+\begin{itemize}[leftmargin=*]
+    \item Programmed the robot in Python, implementing navigation algorithms and sensor integration.
+    \item Debugged and resolved Raspberry Pi hardware-software integration issues.
+    \item Successfully completed the maze navigation challenge, meeting all project requirements.
+\end{itemize}
+\vspace{6pt}
+
+\vspace{10pt}
+\begin{center}
+\begin{minipage}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=5cm,keepaspectratio]{Maze Robot/assets/robot_front.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=5cm,keepaspectratio]{Maze Robot/assets/robot_side.png}
+\end{minipage}
+\end{center}
+
+\newpage
+
+
+
+
+% End
+\end{document}
